@@ -212,7 +212,7 @@ def main():
     parser = OptionParser("Usage: %prog [start|stop|restart] [-U <username>] [-P <conf_path>]")
     parser.add_option("-U", "--username", dest='username', default=os.environ.get('PGUSER') or getpass.getuser(),
                       help="PgBouncer user name (default: \"%s\")." % (getpass.getuser(),))
-    parser.add_option("-P", "--path", dest='config_path', metavar='config_path', help="PgBouncer configure file path")
+    parser.add_option("-P", "--path", dest='config_path', metavar='config_path', help="The abspath path of PgBouncer configure file")
     options, posargs = parser.parse_args()
     arguments = ['start', 'stop', 'restart']
     # 判断启动参数是否合法
