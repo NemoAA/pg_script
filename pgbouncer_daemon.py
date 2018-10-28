@@ -200,7 +200,7 @@ class PgBouncerDaemon(object):
 
 
 def main():
-    parser = OptionParser("Usage: %prog [start|stop|restart|reload] [-U <username>] [-P <conf_path>]")
+    parser = OptionParser("Usage: %prog [start|stop|restart] [-U <username>] [-P <conf_path>]")
     parser.add_option("-U", "--username", dest='username', default=os.environ.get('PGUSER') or getpass.getuser(),
                       help="PgBouncer user name (default: \"%s\")." % (getpass.getuser(),))
     parser.add_option("-P", "--path", dest='config_path', metavar='config_path', help="PgBouncer configure file path")
