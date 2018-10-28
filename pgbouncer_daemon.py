@@ -1,5 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
+
+"""
+@author: nemo
+@email: dbyzaa@163.com
+Created on 2018-10-28
+
+"""
 import ConfigParser
 import setproctitle
 import time
