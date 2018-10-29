@@ -11,3 +11,19 @@
 ```
 sudo python setup.py install
 ```
+## 4. 使用
+```
+su - postgres
+pgbouncerd  start -P /usr/local/pgbouncer/conf/server.ini
+```
+### 5. 帮助
+```
+Usage: pgbouncerd [start|stop|restart] [-U <username>] [-P <conf_path>]
+
+Options:
+  -h, --help            show this help message and exit
+  -U USERNAME, --username=USERNAME
+                        PgBouncer user name (default: "postgres").
+  -P config_path, --path=config_path
+                        The abspath path of PgBouncer configure file
+```
